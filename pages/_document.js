@@ -8,7 +8,6 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link rel="shortcut icon" href="/favicon.svg" />
-          {/* <meta name="theme-color" content={theme.palette.primary.main} /> */}
         </Head>
         <body>
           <Main />

@@ -1,8 +1,28 @@
 import { useEffect } from "react";
 import { DefaultSeo } from "next-seo";
-import SEO from "../next-seo.config.js";
+import { createMuiTheme } from "@material-ui/core/styles";
+import { ThemeProvider } from "@material-ui/core/styles";
 
+import SEO from "../next-seo.config.js";
 import "../styles/globals.css";
+const theme = createMuiTheme({
+  overrides: {
+    MuiTypography: {
+      h1: {
+        fontSize: "1rem",
+        lineHeight: "1.5",
+        fontWeight: "400",
+        letterSpacing: "0.00938em",
+      },
+      body2: {
+        fontSize: "1rem",
+        lineHeight: "1.5",
+        fontWeight: "400",
+        letterSpacing: "0.00938em",
+      },
+    },
+  },
+});
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -16,7 +36,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <DefaultSeo {...SEO} />
-      <Component {...pageProps} />
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   );
 }

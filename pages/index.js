@@ -54,7 +54,7 @@ export default function Home() {
   const classes = useStyles();
   const [isShown, setIsShown] = useState(false);
   return (
-    <Paper elevation={0}>
+    <main>
       <Grid container className={classes.gridCont}>
         <Grid item lg={3} xs={12}>
           <Typography variant="body1">
@@ -81,31 +81,26 @@ export default function Home() {
             )}
           </Typography>
           <Box className={classes.flexCol}>
-            <Typography variant="body1">Recent work</Typography>
-            <Box className={classes.flexRowMb}>
-              <ButtonA />
-              <Typography variant="caption" className={classes.marginR}>
-                web app
+            <Typography variant="body1" className={classes.marginB}>
+              Recent work
+            </Typography>
+            <Box className={classes.marginB}>
+              <Typography variant="body1" className={classes.marginR}>
+                Web apps
               </Typography>
-              <ButtonS /> <Typography variant="caption">web site</Typography>
-            </Box>
-            <Box className={classes.flexRow}>
-              <ButtonA />
+
               <a href="https://www.door.link/" rel="noopener" target="_blank">
                 door.link
               </a>
             </Box>
-            <Box className={classes.flexRow}>
-              <ButtonS />
 
-              <a
-                href="https://www.hi-malta.com/"
-                rel="noopener"
-                target="_blank"
-              >
-                hi-malta
-              </a>
-            </Box>
+            <Typography variant="body1" className={classes.marginR}>
+              Web sites
+            </Typography>
+
+            <a href="https://www.hi-malta.com/" rel="noopener" target="_blank">
+              hi-malta
+            </a>
           </Box>
         </Grid>
         <Grid item lg={3} sm={6} xs={12}>
@@ -113,7 +108,7 @@ export default function Home() {
             <Typography variant="body1" className={classes.marginB}>
               Opening
             </Typography>
-            <Typography variant="body1">
+            <Typography variant="h1">
               Hello, i am Javier Szyfer. <br /> I work in web development and
               design. <br /> My favourite things in life are starting new
               projects, making music and learning stuff.
@@ -180,6 +175,6 @@ export default function Home() {
           </Typography>
         </Grid>
       </Grid>
-    </Paper>
+    </main>
   );
 }
