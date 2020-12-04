@@ -120,7 +120,7 @@ export default function Home() {
             <br />
             Strapi <br />
           </Typography>
-          <Typography variant="h6" className={classes.marginTop}>
+          <Typography variant="body1" className={classes.marginTop}>
             Current status
           </Typography>
           <Typography variant="body1" className={classes.marginTop}>
