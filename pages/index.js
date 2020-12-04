@@ -130,7 +130,7 @@ export default function Home() {
         </Grid>
         <Grid item lg={3} sm={6} xs={12}>
           <Typography variant="body1" className={classes.smMtop}>
-            Current dev stack
+            Actual dev stack
           </Typography>
           <Typography variant="body1" className={classes.marginTop}>
             React - Next.js <br />
@@ -142,14 +142,13 @@ export default function Home() {
             Strapi <br />
           </Typography>
           <Typography variant="body1" className={classes.marginTop}>
-            Facts
+            Current status
           </Typography>
           <Typography variant="body1" className={classes.marginTop}>
             education: self-taught <br />
             freelance: available <br />
             location: Buenos Aires <br />
             living with: Romina & Aldo <br />
-            face: acceptable-look.jpg <br />
             food choice: vegan
             <br />
             religion: none
