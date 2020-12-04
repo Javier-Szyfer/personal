@@ -1,65 +1,186 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import { useState } from "react";
+import Image from "next/image";
 
+//Material UI
+import Typography from "@material-ui/core/Typography";
+import Paper from "@material-ui/core/Paper";
+import Grid from "@material-ui/core/Grid";
+import Box from "@material-ui/core/Box";
+import { makeStyles } from "@material-ui/core/styles";
+
+//Components
+import ButtonA from "../components/circleA";
+import ButtonS from "../components/circleS";
+
+const useStyles = makeStyles((theme) => ({
+  gridCont: {
+    padding: "1rem",
+  },
+  maxW: {
+    maxWidth: "60%",
+  },
+  flexCol: {
+    display: "flex",
+    flexDirection: "column",
+    marginTop: "1rem",
+    marginBottom: "2rem",
+  },
+  flexRow: {
+    display: "flex",
+    alignItems: "center",
+  },
+  flexRowMb: {
+    display: "flex",
+    alignItems: "center",
+    marginBottom: "2rem",
+  },
+
+  marginTop: {
+    marginTop: "1rem",
+  },
+  marginB: {
+    marginBottom: "1rem",
+  },
+  marginR: {
+    marginRight: ".5rem",
+  },
+  smMtop: {
+    [theme.breakpoints.down("xs")]: {
+      marginTop: "1rem",
+    },
+  },
+}));
 export default function Home() {
+  const classes = useStyles();
+  const [isShown, setIsShown] = useState(false);
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Paper elevation={0}>
+      <Grid container className={classes.gridCont}>
+        <Grid item lg={3} xs={12}>
+          <Typography variant="body1">
+            face:{" "}
+            <span
+              style={{ textDecoration: "underline", cursor: "pointer" }}
+              onMouseEnter={() => setIsShown(true)}
+              onClick={() => setIsShown(true)}
+              onMouseLeave={() => setIsShown(false)}
+            >
+              acceptable-look.jpg
+            </span>
+            {isShown && (
+              <div className="imageContainer">
+                <Image
+                  className="image"
+                  src="/profilepic.jpg"
+                  alt="javier's portrait"
+                  layout="fixed"
+                  width={300}
+                  height={300}
+                />
+              </div>
+            )}
+          </Typography>
+          <Box className={classes.flexCol}>
+            <Typography variant="body1">Recent work</Typography>
+            <Box className={classes.flexRowMb}>
+              <ButtonA />
+              <Typography variant="caption" className={classes.marginR}>
+                web app
+              </Typography>
+              <ButtonS /> <Typography variant="caption">web site</Typography>
+            </Box>
+            <Box className={classes.flexRow}>
+              <ButtonA />
+              <a href="https://www.door.link/" rel="noopener" target="_blank">
+                door.link
+              </a>
+            </Box>
+            <Box className={classes.flexRow}>
+              <ButtonS />
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+              <a
+                href="https://www.hi-malta.com/"
+                rel="noopener"
+                target="_blank"
+              >
+                hi-malta
+              </a>
+            </Box>
+          </Box>
+        </Grid>
+        <Grid item lg={3} sm={6} xs={12}>
+          <Box className={classes.maxW}>
+            <Typography variant="body1" className={classes.marginB}>
+              Opening
+            </Typography>
+            <Typography variant="body1">
+              Hello, i am Javier Szyfer. <br /> I work in web development and
+              design. <br /> My favourite things in life are starting new
+              projects, making music and learning stuff.
+            </Typography>
+            <Typography variant="body1" className={classes.marginTop}>
+              Also, i find joy in
+            </Typography>
+            <Typography variant="body1" className={classes.marginTop}>
+              bootrstaping projects <br /> meeting cool people <br />
+              travelling <br /> remote work <br /> art <br />
+              tech <br /> cold showers <br /> silence
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid item lg={3} sm={6} xs={12}>
+          <Typography variant="body1" className={classes.smMtop}>
+            Current dev stack
+          </Typography>
+          <Typography variant="body1" className={classes.marginTop}>
+            React - Next.js <br />
+            Vercel <br />
+            Firebase <br />
+            AWS <br />
+            Heroku
+            <br />
+            Strapi <br />
+          </Typography>
+          <Typography variant="body1" className={classes.marginTop}>
+            Facts
+          </Typography>
+          <Typography variant="body1" className={classes.marginTop}>
+            education: self-taught <br />
+            freelance: available <br />
+            location: Buenos Aires <br />
+            living with: Romina & Aldo <br />
+            face: acceptable-look.jpg <br />
+            food choice: vegan
+            <br />
+            religion: none
+            <br />
+            gender: male
+            <br />
+          </Typography>
+        </Grid>
+        <Grid item lg={3} sm={6} xs={12}>
+          <Typography variant="body1" className={classes.smMtop}>
+            Get in touch
+          </Typography>
+          <Box className={classes.flexCol}>
+            <a href="https://www.google.com/" rel="noopener" target="_blank">
+              Twitter
+            </a>
+            <a href="https://www.google.com/" rel="noopener" target="_blank">
+              Instagram
+            </a>
+            <a href="https://www.google.com/" rel="noopener" target="_blank">
+              Are.na
+            </a>
+            <a href="https://www.google.com/" rel="noopener" target="_blank">
+              Mail
+            </a>
+          </Box>
+          <Typography variant="body1" className={classes.marginTop}>
+            Last update: Dec 5, 2020
+          </Typography>
+        </Grid>
+      </Grid>
+    </Paper>
+  );
 }
