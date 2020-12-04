@@ -69,11 +69,11 @@ export default function Home() {
             )}
           </Typography>
           <Box className={classes.flexCol}>
-            <Typography variant="h6" className={classes.marginB}>
+            <Typography variant="body1" className={classes.marginB}>
               Recent work
             </Typography>
             <Box className={classes.marginB}>
-              <Typography variant="h6">Web apps</Typography>
+              <Typography variant="body1">Web apps</Typography>
 
               <a href="https://www.door.link/" rel="noopener" target="_blank">
                 door.link
@@ -97,7 +97,7 @@ export default function Home() {
               design. <br /> My favourite things in life are starting new
               projects, making music and learning stuff.
             </Typography>
-            <Typography variant="h6" className={classes.marginTop}>
+            <Typography variant="body1" className={classes.marginTop}>
               Also, i find joy in
             </Typography>
             <Typography variant="body1" className={classes.marginTop}>
@@ -108,7 +108,7 @@ export default function Home() {
           </Box>
         </Grid>
         <Grid item lg={3} sm={6} xs={12}>
-          <Typography variant="h6" className={classes.smMtop}>
+          <Typography variant="body1" className={classes.smMtop}>
             Actual dev stack
           </Typography>
           <Typography variant="body1" className={classes.marginTop}>
@@ -137,7 +137,7 @@ export default function Home() {
           </Typography>
         </Grid>
         <Grid item lg={3} sm={6} xs={12}>
-          <Typography variant="h6" className={classes.smMtop}>
+          <Typography variant="body1" className={classes.smMtop}>
             Get in touch
           </Typography>
           <Box className={classes.flexCol}>
