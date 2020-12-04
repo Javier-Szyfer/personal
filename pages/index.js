@@ -3,14 +3,9 @@ import Image from "next/image";
 
 //Material UI
 import Typography from "@material-ui/core/Typography";
-import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import { makeStyles } from "@material-ui/core/styles";
-
-//Components
-import ButtonA from "../components/circleA";
-import ButtonS from "../components/circleS";
 
 const useStyles = makeStyles((theme) => ({
   gridCont: {
@@ -29,11 +24,6 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
   },
-  flexRowMb: {
-    display: "flex",
-    alignItems: "center",
-    marginBottom: "2rem",
-  },
 
   marginTop: {
     marginTop: "1rem",
@@ -41,15 +31,13 @@ const useStyles = makeStyles((theme) => ({
   marginB: {
     marginBottom: "1rem",
   },
-  marginR: {
-    marginRight: ".5rem",
-  },
   smMtop: {
     [theme.breakpoints.down("xs")]: {
       marginTop: "1rem",
     },
   },
 }));
+
 export default function Home() {
   const classes = useStyles();
   const [isShown, setIsShown] = useState(false);
@@ -81,22 +69,18 @@ export default function Home() {
             )}
           </Typography>
           <Box className={classes.flexCol}>
-            <Typography variant="body1" className={classes.marginB}>
+            <Typography variant="h6" className={classes.marginB}>
               Recent work
             </Typography>
             <Box className={classes.marginB}>
-              <Typography variant="body1" className={classes.marginR}>
-                Web apps
-              </Typography>
+              <Typography variant="h6">Web apps</Typography>
 
               <a href="https://www.door.link/" rel="noopener" target="_blank">
                 door.link
               </a>
             </Box>
 
-            <Typography variant="body1" className={classes.marginR}>
-              Web sites
-            </Typography>
+            <Typography variant="body1">Web sites</Typography>
 
             <a href="https://www.hi-malta.com/" rel="noopener" target="_blank">
               hi-malta
@@ -113,7 +97,7 @@ export default function Home() {
               design. <br /> My favourite things in life are starting new
               projects, making music and learning stuff.
             </Typography>
-            <Typography variant="body1" className={classes.marginTop}>
+            <Typography variant="h6" className={classes.marginTop}>
               Also, i find joy in
             </Typography>
             <Typography variant="body1" className={classes.marginTop}>
@@ -124,7 +108,7 @@ export default function Home() {
           </Box>
         </Grid>
         <Grid item lg={3} sm={6} xs={12}>
-          <Typography variant="body1" className={classes.smMtop}>
+          <Typography variant="h6" className={classes.smMtop}>
             Actual dev stack
           </Typography>
           <Typography variant="body1" className={classes.marginTop}>
@@ -136,7 +120,7 @@ export default function Home() {
             <br />
             Strapi <br />
           </Typography>
-          <Typography variant="body1" className={classes.marginTop}>
+          <Typography variant="h6" className={classes.marginTop}>
             Current status
           </Typography>
           <Typography variant="body1" className={classes.marginTop}>
@@ -153,7 +137,7 @@ export default function Home() {
           </Typography>
         </Grid>
         <Grid item lg={3} sm={6} xs={12}>
-          <Typography variant="body1" className={classes.smMtop}>
+          <Typography variant="h6" className={classes.smMtop}>
             Get in touch
           </Typography>
           <Box className={classes.flexCol}>

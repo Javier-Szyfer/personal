@@ -20,6 +20,12 @@ const theme = createMuiTheme({
         fontWeight: "400",
         letterSpacing: "0.00938em",
       },
+      h6: {
+        fontSize: "1rem",
+        lineHeight: "1.5",
+        fontWeight: "400",
+        letterSpacing: "0.00938em",
+      },
     },
   },
 });
