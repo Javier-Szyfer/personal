@@ -101,7 +101,7 @@ export default function Home() {
               Also, i find joy in
             </Typography>
             <Typography variant="body1" className={classes.marginTop}>
-              bootrstaping projects <br /> meeting cool people <br />
+              bootrstapping projects <br /> meeting cool people <br />
               travelling <br /> remote work <br /> art <br />
               tech <br /> cold showers <br /> silence
             </Typography>
@@ -141,16 +141,28 @@ export default function Home() {
             Get in touch
           </Typography>
           <Box className={classes.flexCol}>
-            <a href="https://www.google.com/" rel="noopener" target="_blank">
+            <a
+              href="https://twitter.com/javszyfer"
+              rel="noopener"
+              target="_blank"
+            >
               Twitter
             </a>
-            <a href="https://www.google.com/" rel="noopener" target="_blank">
+            <a
+              href="https://www.instagram.com/szy_e_"
+              rel="noopener"
+              target="_blank"
+            >
               Instagram
             </a>
-            <a href="https://www.google.com/" rel="noopener" target="_blank">
+            <a
+              href="https://www.are.na/javier-szyfer"
+              rel="noopener"
+              target="_blank"
+            >
               Are.na
             </a>
-            <a href="https://www.google.com/" rel="noopener" target="_blank">
+            <a href="mailto:hello@javier.onl" rel="noopener" target="_blank">
               Mail
             </a>
           </Box>

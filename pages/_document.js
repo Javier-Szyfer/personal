@@ -7,7 +7,22 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=${YOUR_TRACKING_ID}"
+          ></script>
+          <script
+            async
+            dangerouslySetInnerHTML={{
+              __html: `window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+            
+              gtag('config', 'GTM-T5BZPTX');`,
+            }}
+          />
           <link rel="shortcut icon" href="/fav.svg" />
+          <meta http-equiv="X-UA-Compatible" content="ie-edge" />
         </Head>
         <body>
           <Main />
