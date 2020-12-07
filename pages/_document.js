@@ -28,16 +28,12 @@ export default class MyDocument extends Document {
             content="https://www.javier.onl"
             key="ogurl"
           />
-          <meta
-            property="og:image"
-            content="https://radio-strapi-bucket.s3-sa-east-1.amazonaws.com/ogcard.png"
-            key="ogimage"
-          />
+          <meta property="og:image" content="/ogcard.png" key="ogimage" />
           <meta property="og:site_name" content="javier.onl" key="ogsitename" />
           <meta property="og:title" content="Javier Szyfer" key="ogtitle" />
           <meta
             property="og:description"
-            content="Web developer and designer"
+            content="Web developer and designer."
             key="ogdesc"
           />
         </Head>
