@@ -79,12 +79,17 @@ export default function Home() {
                 door.link
               </a>
             </Box>
+            <Box>
+              <Typography variant="body1">Web sites</Typography>
 
-            <Typography variant="body1">Web sites</Typography>
-
-            <a href="https://www.hi-malta.com/" rel="noopener" target="_blank">
-              hi-malta
-            </a>
+              <a
+                href="https://www.hi-malta.com/"
+                rel="noopener"
+                target="_blank"
+              >
+                hi-malta
+              </a>
+            </Box>
           </Box>
         </Grid>
         <Grid item lg={3} sm={6} xs={12}>
