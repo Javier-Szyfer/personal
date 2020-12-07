@@ -28,7 +28,11 @@ export default class MyDocument extends Document {
             content="summary_large_image"
             key="twcard"
           />
-          <meta property="og:image" content="/ogcard.png" key="ogimage" />
+          <meta
+            property="og:image"
+            content="https://res.cloudinary.com/aldi/image/upload/v1607370478/ogcard_gcvayk.png"
+            key="ogimage"
+          />
           <meta
             property="og:image:alt"
             content="this is an image of a chair, used as an open graph"
