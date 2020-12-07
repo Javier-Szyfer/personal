@@ -23,20 +23,16 @@ export default class MyDocument extends Document {
           />{" "}
           <link rel="shortcut icon" href="/fav.svg" />
           <meta http-equiv="X-UA-Compatible" content="ie-edge" />
-          <meta name="twitter:card" content="summary" key="twcard" />
-          {/* <meta
-            property="og:url"
-            content="https://www.javier.onl"
-            key="ogurl"
-          /> */}
-          <meta property="og:image" content="/ogcard.png" key="ogimage" />
-          {/* <meta property="og:site_name" content="javier.onl" key="ogsitename" />
-          <meta property="og:title" content="Javier Szyfer" key="ogtitle" />
           <meta
-            property="og:description"
-            content="Web developer and designer."
-            key="ogdesc"
-          /> */}
+            name="twitter:card"
+            content="summary_large_image"
+            key="twcard"
+          />
+          <meta property="og:image" content="/ogcard.png" key="ogimage" />
+          <meta
+            property="og:image:alt"
+            content="this is an image of a chair, used as an open graph"
+          />
         </Head>
         <body>
           <Main />
