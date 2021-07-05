@@ -31,6 +31,12 @@ const useStyles = makeStyles((theme) => ({
   marginB: {
     marginBottom: "1rem",
   },
+  webApps: {
+    display: "flex",
+    flexDirection: "column"
+    
+
+  },
   smMtop: {
     [theme.breakpoints.down("xs")]: {
       marginTop: "1rem",
@@ -74,10 +80,14 @@ export default function Home() {
             </Typography>
             <Box className={classes.marginB}>
               <Typography variant="body1">Web apps</Typography>
-
+<Box className={classes.webApps}>
               <a href="https://www.door.link/" rel="noopener" target="_blank">
                 door.link
               </a>
+              <a href="https://www.pond.rest/" rel="noopener" target="_blank">
+                pond.rest
+              </a>
+              </Box>
             </Box>
             <Box>
               <Typography variant="body1">Web sites</Typography>
@@ -132,7 +142,7 @@ export default function Home() {
             education: self-taught <br />
             freelance: available <br />
             location: Buenos Aires <br />
-            living with: Romina & Aldo <br />
+            living with: Romina, Aldo & Walter<br />
             food choice: vegan
             <br />
             religion: none
@@ -172,7 +182,7 @@ export default function Home() {
             </a>
           </Box>
           <Typography variant="body1" className={classes.marginTop}>
-            Last update: Dec 5, 2020
+            Last update: Jul 5, 2020
           </Typography>
         </Grid>
       </Grid>
