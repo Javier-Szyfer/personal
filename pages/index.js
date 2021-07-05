@@ -182,7 +182,7 @@ export default function Home() {
             </a>
           </Box>
           <Typography variant="body1" className={classes.marginTop}>
-            Last update: Jul 5, 2020
+            Last update: Jul 5, 2021
           </Typography>
         </Grid>
       </Grid>
