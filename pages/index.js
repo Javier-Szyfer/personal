@@ -166,8 +166,6 @@ export default function Home() {
             <br />
             religion: none
             <br />
-            gender: male
-            <br />
           </Typography>
         </Grid>
         <Grid item lg={3} sm={6} xs={12}>
