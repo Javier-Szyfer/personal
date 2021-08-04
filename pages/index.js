@@ -33,9 +33,7 @@ const useStyles = makeStyles((theme) => ({
   },
   webApps: {
     display: "flex",
-    flexDirection: "column"
-    
-
+    flexDirection: "column",
   },
   smMtop: {
     [theme.breakpoints.down("xs")]: {
@@ -64,12 +62,13 @@ export default function Home() {
             {isShown && (
               <div className="imageContainer">
                 <Image
+                  priority
                   className="image"
                   src="/profilepic.jpg"
                   alt="javier's portrait"
                   layout="fixed"
                   width={300}
-                  height={300}
+                  height={400}
                 />
               </div>
             )}
@@ -79,14 +78,32 @@ export default function Home() {
               Recent work
             </Typography>
             <Box className={classes.marginB}>
-              <Typography variant="body1">Web apps</Typography>
-<Box className={classes.webApps}>
-              <a href="https://www.door.link/" rel="noopener" target="_blank">
-                door.link
-              </a>
-              <a href="https://www.pond.rest/" rel="noopener" target="_blank">
-                pond.rest
-              </a>
+              <Typography variant="body1"> Web apps</Typography>
+              <Box className={classes.webApps}>
+                <a
+                  href="https://suupcover.com/"
+                  rel="noopener"
+                  target="_blank"
+                  style={{ margin: ".2rem 0" }}
+                >
+                  Suupcover
+                </a>
+                <a
+                  href="https://www.door.link/"
+                  rel="noopener"
+                  target="_blank"
+                  style={{ marginBottom: ".2rem" }}
+                >
+                  door.link
+                </a>
+                <a
+                  href="https://www.pond.rest/"
+                  rel="noopener"
+                  target="_blank"
+                  style={{ marginBottom: ".2rem" }}
+                >
+                  pond.rest
+                </a>
               </Box>
             </Box>
             <Box>
@@ -142,7 +159,8 @@ export default function Home() {
             education: self-taught <br />
             freelance: available <br />
             location: Buenos Aires <br />
-            living with: Romina, Aldo & Walter<br />
+            living with: Romina, Aldo, Walter, & Hugo
+            <br />
             food choice: vegan
             <br />
             religion: none
@@ -170,19 +188,12 @@ export default function Home() {
             >
               Instagram
             </a>
-            <a
-              href="https://www.are.na/javier-szyfer"
-              rel="noopener"
-              target="_blank"
-            >
-              Are.na
-            </a>
             <a href="mailto:hello@javier.onl" rel="noopener" target="_blank">
               Mail
             </a>
           </Box>
           <Typography variant="body1" className={classes.marginTop}>
-            Last update: Jul 5, 2021
+            Last update: Aug 3, 2021
           </Typography>
         </Grid>
       </Grid>
