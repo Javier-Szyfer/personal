@@ -62,7 +62,8 @@ export default function Home() {
             {isShown && (
               <div className="imageContainer">
                 <Image
-                  priority
+                  // priority
+                  placeholder="blur"
                   className="image"
                   src="/profilepic.jpg"
                   alt="javier's portrait"
@@ -164,8 +165,6 @@ export default function Home() {
             food choice: vegan
             <br />
             religion: none
-            <br />
-            gender: male
             <br />
           </Typography>
         </Grid>
