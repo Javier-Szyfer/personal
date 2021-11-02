@@ -134,8 +134,9 @@ export default function Home() {
               Also, i find joy in
             </Typography>
             <Typography variant="body1" className={classes.marginTop}>
-              bootrstapping projects <br /> meeting cool people <br />
-              travelling <br /> remote work <br /> art <br />
+              meeting cool people <br />
+              travelling <br /> web3 <br /> crypto <br />
+              art <br />
               tech <br /> cold showers <br /> silence
             </Typography>
           </Box>
@@ -157,6 +158,7 @@ export default function Home() {
             Current status
           </Typography>
           <Typography variant="body1" className={classes.marginTop}>
+            learning: Solidity <br />
             education: self-taught <br />
             freelance: available <br />
             location: Buenos Aires <br />
@@ -192,7 +194,7 @@ export default function Home() {
             </a>
           </Box>
           <Typography variant="body1" className={classes.marginTop}>
-            Last update: Aug 3, 2021
+            Last update: Nov 2, 2021
           </Typography>
         </Grid>
       </Grid>
