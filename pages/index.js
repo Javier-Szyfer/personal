@@ -143,7 +143,7 @@ export default function Home() {
         </Grid>
         <Grid item lg={3} sm={6} xs={12}>
           <Typography variant="body1" className={classes.smMtop}>
-            Actual dev stack
+            Dev stack
           </Typography>
           <Typography variant="body1" className={classes.marginTop}>
             React - Next.js <br />
