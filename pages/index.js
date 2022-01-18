@@ -166,8 +166,6 @@ export default function Home() {
             <br />
             food choice: vegan
             <br />
-            religion: none
-            <br />
           </Typography>
         </Grid>
         <Grid item lg={3} sm={6} xs={12}>
@@ -192,6 +190,7 @@ export default function Home() {
             <a href="mailto:hello@javier.onl" rel="noopener" target="_blank">
               Mail
             </a>
+            <span>javvvs.eth</span>
           </Box>
           <Typography variant="body1" className={classes.marginTop}>
             Last update: Nov 2, 2021

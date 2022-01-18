@@ -22,7 +22,7 @@ export default class MyDocument extends Document {
             }}
           />{" "}
           <link rel="shortcut icon" href="/fav.svg" />
-          <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+          <meta httpEquiv="X-UA-Compatible" content="ie-edge" />
           <meta
             name="twitter:card"
             content="summary_large_image"
