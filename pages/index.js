@@ -174,7 +174,7 @@ export default function Home() {
           </Typography>
           <Box className={classes.flexCol}>
             <a
-              href="https://twitter.com/javszyfer"
+              href="https://twitter.com/javvvs_"
               rel="noopener"
               target="_blank"
             >
