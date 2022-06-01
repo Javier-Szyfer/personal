@@ -34,6 +34,7 @@ const useStyles = makeStyles((theme) => ({
   webApps: {
     display: "flex",
     flexDirection: "column",
+    gap: ".2rem",
   },
   smMtop: {
     [theme.breakpoints.down("xs")]: {
@@ -81,35 +82,40 @@ export default function Home() {
             <Box className={classes.marginB}>
               <Typography variant="body1"> Web apps</Typography>
               <Box className={classes.webApps}>
-                <a
-                  href="https://suupcover.com/"
-                  rel="noopener"
-                  target="_blank"
-                  style={{ margin: ".2rem 0" }}
-                >
-                  Suupcover
-                </a>
-                <a
-                  href="https://www.door.link/"
-                  rel="noopener"
-                  target="_blank"
-                  style={{ marginBottom: ".2rem" }}
-                >
-                  door.link
-                </a>
-                <a
-                  href="https://www.pond.rest/"
-                  rel="noopener"
-                  target="_blank"
-                  style={{ marginBottom: ".2rem" }}
-                >
-                  pond.rest
-                </a>
+                <div>
+                  <a
+                    href="https://suupcover.com/"
+                    rel="noopener"
+                    target="_blank"
+                    style={{ margin: ".2rem 0" }}
+                  >
+                    Suupcover
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="https://www.door.link/"
+                    rel="noopener"
+                    target="_blank"
+                    style={{ marginBottom: ".2rem" }}
+                  >
+                    door.link
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="https://www.pond.rest/"
+                    rel="noopener"
+                    target="_blank"
+                    style={{ marginBottom: ".2rem" }}
+                  >
+                    pond.rest
+                  </a>
+                </div>
               </Box>
             </Box>
             <Box>
               <Typography variant="body1">Web sites</Typography>
-
               <a
                 href="https://www.hi-malta.com/"
                 rel="noopener"
@@ -126,9 +132,9 @@ export default function Home() {
               Opening
             </Typography>
             <Typography variant="h1">
-              Hello, i am Javier Szyfer. <br /> I work in web development and
-              design. <br /> My favourite things in life are starting new
-              projects, making music and learning stuff.
+              Hello, i am Javier Szyfer. <br /> A developer focused on web3 and
+              adding value to the space. <br /> My favourite things in life are
+              starting new projects, making music and learning stuff.
             </Typography>
             <Typography variant="body1" className={classes.marginTop}>
               Also, i find joy in
@@ -147,12 +153,11 @@ export default function Home() {
           </Typography>
           <Typography variant="body1" className={classes.marginTop}>
             React - Next.js <br />
-            Vercel <br />
-            Firebase <br />
-            AWS <br />
-            Heroku
+            Ethers.js / Wagmi <br />
+            The Graph <br />
+            Zora stack <br />
+            Hardhat
             <br />
-            Strapi <br />
           </Typography>
           <Typography variant="body1" className={classes.marginTop}>
             Current status
@@ -173,12 +178,27 @@ export default function Home() {
             Get in touch
           </Typography>
           <Box className={classes.flexCol}>
+            <span>javvvs.eth</span>
             <a
               href="https://twitter.com/javvvs_"
               rel="noopener"
               target="_blank"
             >
               Twitter
+            </a>
+            <a
+              href="https://github.com/Javier-Szyfer"
+              rel="noopener"
+              target="_blank"
+            >
+              Github
+            </a>
+            <a
+              href="https://www.lensfrens.xyz/javvvs.lens"
+              rel="noopener"
+              target="_blank"
+            >
+              LensFrens
             </a>
             <a
               href="https://www.instagram.com/szy_e_"
@@ -190,11 +210,10 @@ export default function Home() {
             <a href="mailto:hello@javier.onl" rel="noopener" target="_blank">
               Mail
             </a>
-            <span>javvvs.eth</span>
           </Box>
-          <Typography variant="body1" className={classes.marginTop}>
-            Last update: Nov 2, 2021
-          </Typography>
+          <div className={classes.marginTop}>
+            <Typography variant="body1">Last update: Jun 1, 2022</Typography>
+          </div>
         </Grid>
       </Grid>
     </main>
