@@ -63,7 +63,6 @@ export default function Home() {
             {isShown && (
               <div className="imageContainer">
                 <Image
-                  // priority
                   placeholder="blur"
                   className="image"
                   src="/profilepic.jpg"
@@ -84,12 +83,12 @@ export default function Home() {
               <Box className={classes.webApps}>
                 <div>
                   <a
-                    href="https://suupcover.com/"
+                    href="https://lyingflat.place/"
                     rel="noopener"
                     target="_blank"
                     style={{ margin: ".2rem 0" }}
                   >
-                    Suupcover
+                    lying flat
                   </a>
                 </div>
                 <div>
@@ -110,6 +109,16 @@ export default function Home() {
                     style={{ marginBottom: ".2rem" }}
                   >
                     pond.rest
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="https://www.suupcover.com/"
+                    rel="noopener"
+                    target="_blank"
+                    style={{ marginBottom: ".2rem" }}
+                  >
+                    Suupcover
                   </a>
                 </div>
               </Box>
@@ -179,6 +188,7 @@ export default function Home() {
           </Typography>
           <Box className={classes.flexCol}>
             <span>javvvs.eth</span>
+            <span style={{ marginBottom: "2rem" }}>dovpem~wannul at urbit</span>
             <a
               href="https://twitter.com/javvvs_"
               rel="noopener"
@@ -212,7 +222,7 @@ export default function Home() {
             </a>
           </Box>
           <div className={classes.marginTop}>
-            <Typography variant="body1">Last update: Jun 1, 2022</Typography>
+            <Typography variant="body1">Last update: Jun 9, 2022</Typography>
           </div>
         </Grid>
       </Grid>
