@@ -63,11 +63,11 @@ export default function Home() {
             {isShown && (
               <div className="imageContainer">
                 <Image
-                  placeholder="blur"
                   className="image"
                   src="/profilepic.jpg"
                   alt="javier's portrait"
                   layout="fixed"
+                  priority={true}
                   width={300}
                   height={400}
                 />
@@ -209,13 +209,6 @@ export default function Home() {
               target="_blank"
             >
               LensFrens
-            </a>
-            <a
-              href="https://www.instagram.com/szy_e_"
-              rel="noopener"
-              target="_blank"
-            >
-              Instagram
             </a>
             <a href="mailto:hello@javier.onl" rel="noopener" target="_blank">
               Mail
