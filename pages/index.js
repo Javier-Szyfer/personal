@@ -65,9 +65,10 @@ export default function Home() {
                 <Image
                   className="image"
                   src="/profilepic.jpg"
-                  alt="javier's portrait"
+                  alt="javvvs.eth portrait"
                   layout="fixed"
                   priority={true}
+                  preload={true}
                   width={300}
                   height={400}
                 />
