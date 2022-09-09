@@ -83,6 +83,16 @@ export default function Home() {
               <Box className={classes.webApps}>
                 <div>
                   <a
+                    href="https://fjord.feltzine.art/"
+                    rel="noopener"
+                    target="_blank"
+                    style={{ margin: ".2rem 0" }}
+                  >
+                    Felt Zine x Fjord
+                  </a>
+                </div>
+                <div>
+                  <a
                     href="https://lyingflat.place/"
                     rel="noopener"
                     target="_blank"
@@ -141,18 +151,17 @@ export default function Home() {
               Opening
             </Typography>
             <Typography variant="h1">
-              Hello, i am Javier Szyfer. <br /> A developer focused on web3 and
-              adding value to the space. <br /> My favourite things in life are
-              starting new projects, making music and learning stuff.
+              Hello, i am javvvs <br /> a full-stack web3 developer. <br /> My
+              favourite things are starting new projects, making music and
+              learning stuff.
             </Typography>
             <Typography variant="body1" className={classes.marginTop}>
               Also, i find joy in
             </Typography>
             <Typography variant="body1" className={classes.marginTop}>
-              meeting cool people <br />
               travelling <br /> web3 <br /> crypto <br />
               art <br />
-              tech <br /> cold showers <br /> silence
+              tech <br /> modular synths <br /> silence
             </Typography>
           </Box>
         </Grid>
@@ -187,8 +196,15 @@ export default function Home() {
             Get in touch
           </Typography>
           <Box className={classes.flexCol}>
-            <span>javvvs.eth</span>
-            <span style={{ marginBottom: "2rem" }}>dovpem~wannul at urbit</span>
+            <a
+              href="https://rainbow.me/javvvs.eth"
+              rel="noopener"
+              target="_blank"
+            >
+              javvvs.eth
+            </a>
+
+            <p style={{ marginBottom: "2rem" }}>dovpem~wannul at urbit</p>
             <a
               href="https://twitter.com/javvvs_"
               rel="noopener"
@@ -215,7 +231,7 @@ export default function Home() {
             </a>
           </Box>
           <div className={classes.marginTop}>
-            <Typography variant="body1">Last update: Jun 9, 2022</Typography>
+            <Typography variant="body1">Last update: Sep 9, 2022</Typography>
           </div>
         </Grid>
       </Grid>
