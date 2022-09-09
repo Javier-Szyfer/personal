@@ -33,10 +33,7 @@ export default class MyDocument extends Document {
             content="https://res.cloudinary.com/aldi/image/upload/v1662731645/javier/ogcard_zvmgqj.svg"
             key="ogimage"
           />
-          <meta
-            property="og:image:alt"
-            content="this is an image of a chair, used as an open graph"
-          />
+          <meta property="og:image:alt" content="image for the open graph" />
         </Head>
         <body>
           <Main />
