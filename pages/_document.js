@@ -30,7 +30,7 @@ export default class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://res.cloudinary.com/aldi/image/upload/v1607370478/ogcard_gcvayk.png"
+            content="https://res.cloudinary.com/aldi/image/upload/v1662731645/javier/ogcard_zvmgqj.svg"
             key="ogimage"
           />
           <meta
