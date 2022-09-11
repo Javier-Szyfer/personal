@@ -28,6 +28,8 @@ export default class MyDocument extends Document {
             content="summary_large_image"
             key="twcard"
           />
+          <meta name="twitter:site" content="@javvvs_" />
+          <meta name="twitter:creator" content="@javvvs_" />
           <meta
             property="og:image"
             content="https://res.cloudinary.com/aldi/image/upload/v1662731645/javier/ogcard_zvmgqj.svg"

@@ -13,7 +13,7 @@ export default {
         url: "https://res.cloudinary.com/aldi/image/upload/v1662731645/javier/ogcard_zvmgqj.svg",
         width: 1200,
         height: 630,
-        alt: "javvvs.eth opengraph image",
+        alt: "javier.onl opengraph image",
       },
     ],
   },
