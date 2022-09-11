@@ -31,11 +31,19 @@ export default class MyDocument extends Document {
           <meta name="twitter:site" content="@javvvs_" />
           <meta name="twitter:creator" content="@javvvs_" />
           <meta
+            name="twitter:card"
+            content="summary_large_image"
+            key="twcard"
+          />
+          <meta
             property="og:image"
-            content="https://res.cloudinary.com/aldi/image/upload/v1662731645/javier/ogcard_zvmgqj.svg"
+            content="https://res.cloudinary.com/aldi/image/upload/v1662921576/javier/javvvs-og_zyde8m.jpg"
             key="ogimage"
           />
-          <meta property="og:image:alt" content="image for the open graph" />
+          <meta
+            property="og:image:alt"
+            content="javier.onl - open graph card"
+          />
         </Head>
         <body>
           <Main />
