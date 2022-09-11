@@ -10,7 +10,7 @@ export default {
     description: "web3 developer",
     images: [
       {
-        url: "https://res.cloudinary.com/aldi/image/upload/v1662921576/javier/javvvs-og_zyde8m.jpg",
+        url: "https://res.cloudinary.com/aldi/image/upload/v1662922210/javier/javvvs-open-graph-card_otdyor.jpg",
         width: 1200,
         height: 630,
         alt: "javier.onl opengraph image",

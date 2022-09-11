@@ -37,7 +37,7 @@ export default class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://res.cloudinary.com/aldi/image/upload/v1662921576/javier/javvvs-og_zyde8m.jpg"
+            content="https://res.cloudinary.com/aldi/image/upload/v1662922210/javier/javvvs-open-graph-card_otdyor.jpg"
             key="ogimage"
           />
           <meta
