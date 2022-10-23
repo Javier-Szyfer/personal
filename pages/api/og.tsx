@@ -16,7 +16,8 @@ export default function () {
           textAlign: "center",
           alignItems: "flex-end",
           justifyContent: "flex-end",
-          color: "#303030",
+          color: "#f8f8f8",
+          backgroundColor: "transparent",
           padding: 32,
           fontFamily: "serif",
         }}

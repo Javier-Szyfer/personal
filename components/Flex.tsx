@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { styled } from "../stitches.config";
 
 export const StyledFlex = styled("li", {
@@ -18,9 +17,6 @@ const Circle = styled("div", {
     display: "inline-block",
   },
 });
-const Link = () => {
-  return <Image src="/link.svg" width={20} height={20} />;
-};
 export const Flex = ({ children }): any => {
   return (
     <StyledFlex>
