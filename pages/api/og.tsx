@@ -9,21 +9,11 @@ export default function () {
     (
       <div
         style={{
-          fontSize: 96,
           width: "100%",
           height: "100%",
-          display: "flex",
-          textAlign: "center",
-          alignItems: "flex-end",
-          justifyContent: "flex-end",
-          color: "#f8f8f8",
-          backgroundColor: "transparent",
-          padding: 32,
-          fontFamily: "serif",
+          backgroundColor: "#202020",
         }}
-      >
-        javvvs
-      </div>
+      />
     ),
     {
       width: 1200,

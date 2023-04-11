@@ -1,100 +1,87 @@
-import Head from "next/head";
-
-import { Content } from "../components/Content";
-import { Title } from "../components/Title";
-import { Link } from "../components/Link";
-import { Grid } from "../components/Grid";
+import { useState } from "react";
 import { NextPage } from "next";
-import { List } from "../components/List";
-import { LastUpdate } from "../components/LastUpdate";
-import { Flex } from "../components/Flex";
-import { WorkSection } from "../components/WorkSection";
-import { ContactLinks } from "../components/ContactLinks";
-import { Workplace } from "../components/WorkPlace";
+import Head from "next/head";
+import Link from "next/link";
 
 const Home: NextPage = () => {
+  const [title, setTitle] = useState("");
   return (
-    <Content>
+    <>
       <Head>
         <title>javvvs</title>
         <meta name="description" content="personal site" />
       </Head>
-      <Grid>
-        <div>
-          <Title>Recent work</Title>
-          <WorkSection>
-            <Flex>
-              <Link href="https://www.door.link/" title="door.link" />
-            </Flex>
-            <Flex>
-              <Link href="https://www.neosound.xyz/" title="neosound" />
-            </Flex>
-            <Flex>
-              <Link href="https://fjord.feltzine.art/" title="feltzine" />
-            </Flex>
-            <Flex>
-              <Link href="https://lyingflat.place/" title="lying flat" />
-            </Flex>
-            <Flex>
-              <Link href="https://www.pond.rest/" title="pond.rest" />
-            </Flex>
-            <Flex>
-              <Link href="https://www.suupcover.com/" title="suupcover" />
-            </Flex>
-            <Flex>
-              <Link href="https://www.hi-malta.com/" title="romi.link" />
-            </Flex>
-          </WorkSection>
-        </div>
-        <div>
-          <Title>Opening</Title>
-          <List>
-            <li> Hello, this is javvvs.</li>
-            <li>Nowdays a web3 developer.</li>
-            <li>I like starting new projects,</li>
-            <li>making music and learning stuff.</li>
-            <Title>Also, i find joy in</Title>
-            <li>travelling</li>
-            <li>crypto</li>
-            <li>art</li>
-            <li>tech</li>
-            <li>modular synths</li>
-            <li>silence</li>
-          </List>
-        </div>
-        <div>
-          <Title>Currently</Title>
-          <List>
+      <main>
+        <section>
+          <p>
+            Hello, this is javvvs. <br /> Nowdays an engineer working at{" "}
+            <Link
+              href={"https://catalog.works"}
+              target="_blank"
+              className="catalog"
+            >
+              <a>Catalog</a>
+            </Link>
+            .
+          </p>
+          <p>I find joy in making music, travelling and learning new things.</p>
+        </section>
+        <section>
+          Some things I've worked on:
+          <div className="flex">
+            <Link href={"https://door.link"} passHref>
+              <a target="_blank" className="customLink" />
+            </Link>
+            <Link href={"https://lyingflat.place/"} passHref>
+              <a target="_blank" className="customLink" />
+            </Link>
+            <Link href={"https://fjord.feltzine.art/"} passHref>
+              <a target="_blank" className="customLink" />
+            </Link>
+            <Link href={"https://www.pond.rest/"} passHref>
+              <a target="_blank" className="customLink" />
+            </Link>
+            <Link href={"https://suupcover.com/"} passHref>
+              <a target="_blank" className="customLink" />
+            </Link>
+            <Link href={"https://romi.link/journal"} passHref>
+              <a target="_blank" className="customLink" />
+            </Link>
+          </div>
+        </section>
+        <section>
+          <p>Get in touch:</p>
+          <ul>
             <li>
-              working at:{" "}
-              <Workplace href="https://beta.catalog.works" title="catalog" />
+              <Link href={"https://twitter.com/javvvs"}>
+                <a target="_blank">Twitter</a>
+              </Link>
             </li>
-            <li>living in: Buenos Aires</li>
-            <li>learning: piano</li>
-            <Title>Get in touch</Title>
-            <ContactLinks>
-              <li>
-                <Link href="https://twitter.com/javvvs_" title="twitter" />
-              </li>
-              <li>
-                <Link href="https://github.com/Javier-Szyfer" title="github" />
-              </li>
-              <li>
-                <Link
-                  href="https://www.lensfrens.xyz/javvvs.lens"
-                  title="lens"
-                />
-              </li>
-              <li>
-                <Link href="mailto:hello@javier.onl" title="mail" />
-              </li>
-            </ContactLinks>
-            <li>~dovpem-wannul</li>
-          </List>
-        </div>
-      </Grid>
-      <LastUpdate>Last update: Oct 22, 2022</LastUpdate>
-    </Content>
+            <li>
+              <Link href={"https://github.com/Javier-Szyfer"}>
+                <a target="_blank">Github</a>
+              </Link>
+            </li>
+            <li>
+              <Link href={"https://warpcast.com/javvvs"}>
+                <a target="_blank">Warpcast</a>
+              </Link>
+            </li>
+            <li>
+              <Link href={"mailto:hello@javier.onl"}>
+                <a target="_blank">Mail</a>
+              </Link>
+            </li>
+            <li>
+              <Link href={"/"}>
+                ~dovpem-wannul at urbit
+              </Link>
+            </li>
+          </ul>
+        </section>
+        <span>Last update: April 10, 2023</span>
+      </main>
+    </>
   );
 };
 
