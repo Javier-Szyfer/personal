@@ -85,11 +85,6 @@
     fflate "^0.7.3"
     string.prototype.codepointat "^0.2.1"
 
-"@stitches/react@^1.2.8":
-  version "1.2.8"
-  resolved "https://registry.npmjs.org/@stitches/react/-/react-1.2.8.tgz"
-  integrity sha512-9g9dWI4gsSVe8bNLlb+lMkBYsnIKCZTmvqvDG+Avnn69XfmHZKiaMrx7cgTaddq7aTPPmXiTsbFcUy0xgI4+wA==
-
 "@swc/helpers@0.4.11":
   version "0.4.11"
   resolved "https://registry.npmjs.org/@swc/helpers/-/helpers-0.4.11.tgz"
