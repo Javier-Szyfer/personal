@@ -24,7 +24,7 @@ const Home: NextPage = () => {
             </Link>
             .
           </p>
-          <p>I find joy in making music, travelling and learning new things.</p>
+          <p>I find joy in making music, traveling and learning new things.</p>
         </section>
         <section>
           Some things I've worked on:
