@@ -41,9 +41,6 @@ const Home: NextPage = () => {
             <Link href={"https://www.pond.rest/"} passHref>
               <a target="_blank" className="customLink" />
             </Link>
-            <Link href={"https://suupcover.com/"} passHref>
-              <a target="_blank" className="customLink" />
-            </Link>
             <Link href={"https://romi.link/journal"} passHref>
               <a target="_blank" className="customLink" />
             </Link>
@@ -73,9 +70,7 @@ const Home: NextPage = () => {
               </Link>
             </li>
             <li>
-              <Link href={"/"}>
-                ~dovpem-wannul at urbit
-              </Link>
+              <Link href={"/"}>~dovpem-wannul at urbit</Link>
             </li>
           </ul>
         </section>
